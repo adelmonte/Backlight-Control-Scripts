@@ -1,0 +1,12 @@
+[Unit]
+Description=Keyboard Backlight Control Service
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/backlight-control.sh
+Restart=always
+User=root
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+[Install]
+WantedBy=multi-user.target
