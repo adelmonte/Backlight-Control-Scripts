@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Set the brightness and keyboard backlight paths
 brightness_file="/sys/class/backlight/intel_backlight/actual_brightness"
 keyboard_backlight_file="/sys/class/leds/dell::kbd_backlight/brightness"
 
